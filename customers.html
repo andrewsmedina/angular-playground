@@ -1,0 +1,16 @@
+<html ng-app>
+<head>
+	<title>customers</title>
+</head>
+<body>
+	<div class="container" ng-init="customers=[{'name': 'andrews', 'city': 'rio de janeiro'}, {'name': 'yza', 'city': 'rondonopolis'}]">
+		<h3>Customers</h3>
+		<input type="text" ng-model="name" />
+		<ul>
+			<li ng-repeat="cust in customers | filter:name | orderBy:'city'">{{ cust.name }} - {{ cust.city }}</li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+</html>
