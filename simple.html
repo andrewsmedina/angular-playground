@@ -15,13 +15,12 @@
 
 	<script>
 		var demoApp = angular.module('demoApp', []);
-		function SimpleController($scope) {
+		demoApp.controller('SimpleController', function ($scope) {
 			$scope.customers = [
 			{'name': 'andrews', 'city': 'rio de janeiro'},
 			{'name': 'yza', 'city': 'rondonopolis'}
 			]
-		}
-		demoApp.controller('SimpleController', SimpleController);
+		});
 	</script>
 </body>
 </html>
