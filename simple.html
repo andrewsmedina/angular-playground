@@ -1,4 +1,4 @@
-<html ng-app>
+<html ng-app="demoApp">
 <head>
 	<title>customers</title>
 </head>
@@ -14,12 +14,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 
 	<script>
+		var demoApp = angular.module('demoApp', []);
 		function SimpleController($scope) {
 			$scope.customers = [
 			{'name': 'andrews', 'city': 'rio de janeiro'},
 			{'name': 'yza', 'city': 'rondonopolis'}
 			]
 		}
+		demoApp.controller('SimpleController', SimpleController);
 	</script>
 </body>
 </html>
