@@ -1,0 +1,15 @@
+<html ng-app>
+<head>
+	<title>hello world!</title>
+</head>
+<body>
+	<div class="container" ng-init="names=['andrews', 'yza', 'tales']">
+		<h3>Repeating</h3>
+		<ul>
+			<li ng-repeat="name in names">{{ name }}</li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</body>
+</html>
